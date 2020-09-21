@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+    <meta charset='utf-8'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Brastemp</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <script>
+        function modelo1() {
+            location.href = "intent://arvr.google.com/scene-viewer/1.0?file=./assets/refrigerador_branco.gltf&mode=3d_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+        }
+        function modelo2() {
+            // location.href = "intent://arvr.google.com/scene-viewer/1.0?file=./assets/buildings.gltf&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+            location.href = "intent://arvr.google.com/scene-viewer/1.0?file=./assets/refrigerador_vermelho.gltf&mode=3d_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+    </script>
+    <div id="infoScreen" class="infoScreen">
+        <div class="bgblur"></div>
+        <div class="bg">
+            <img class="vertical" width="2048" height="2048" src="assets/bg.jpg">
+        </div>
+        <!-- <div class="logo">
+            <img class="verticalLeft" width="384" height="76" src="">
+        </div> -->
+        <div id="cooperado" class="cooperado cursorPointer">
+            <img class="vertical" width="691" height="114" src="assets/modelo1.png" onclick="modelo1();">
+        </div>
+        <div id="colaborador" class="colaborador cursorPointer">
+            <img class="vertical" width="691" height="114" src="assets/modelo2.png" onclick="modelo2();">
+        </div>
+        <!-- <div class="rodape"> </div> -->
+    </div>
+</body>
+
+</html>
